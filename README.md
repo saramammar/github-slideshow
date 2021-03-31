@@ -29,6 +29,9 @@ Push the branch to GitHub:
 Check out to your branch:
 ` git checkout my-slide `
 
+Merge the main branch into the add-experience branch. To ensure that you're working with an up to date copy of main, we'll use its remote tracking branch:
+` git merge origin/main `
+
 Stage your new file:
 ` git add _posts/0000-01-02-saramammar.md `
 
@@ -40,6 +43,9 @@ Push your new commit to GitHub:
 
 Check out to the main branch:
 ` git checkout main `
+
+Ensure the main branch is up to date:
+` git pull `
 
 Merge your branch:
 ` git merge my-slide `
