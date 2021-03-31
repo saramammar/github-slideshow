@@ -37,3 +37,15 @@ After adding the text, commit the change while providing a commit message:
 
 Push your new commit to GitHub:
 ` git push `
+
+Check out to the main branch:
+` git checkout main `
+
+Merge your branch:
+` git merge my-slide `
+
+Push the merged history to GitHub:
+` git push `
+
+Delete your the branch locally:
+` git branch -d my-slide `
