@@ -23,6 +23,9 @@ Navigate to the repository in your shell:
 Create a branch, use whatever name you like. Feel free to use the suggested name below.
 ` git branch my-slide `
 
+Or Create a new branch by issuing the command:
+` git checkout -b new_branch `
+
 Push the branch to GitHub:
 ` git push --set-upstream origin <BRANCH-NAME> `
 
