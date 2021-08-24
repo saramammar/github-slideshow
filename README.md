@@ -50,6 +50,9 @@ Check out to the main branch:
 Ensure the main branch is up to date:
 ` git pull `
 
+If you want to undo the last git pull:
+` git reset --hard master@{"10 minutes ago"} `
+
 Merge your branch:
 ` git merge my-slide `
 
