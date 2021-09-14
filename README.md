@@ -61,3 +61,14 @@ Push the merged history to GitHub:
 
 Delete your the branch locally:
 ` git branch -d my-slide `
+
+-----------------------------------------
+
+List all remote branches:
+` git branch --all `
+
+Switch to another branch (remote branch):
+` git checkout -t origin/another-branch `
+
+Set the cache for 1 hour:
+` git config --global credential.helper "cache --timeout=86400" `
