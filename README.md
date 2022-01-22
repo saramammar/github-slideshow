@@ -62,6 +62,9 @@ Push the merged history to GitHub:
 Delete your the branch locally:
 ` git branch -d my-slide `
 
+If you want to Delete the remote branch:
+` git push origin --delete <oldname> `
+
 -----------------------------------------
 
 List all remote branches:
@@ -70,5 +73,54 @@ List all remote branches:
 Switch to another branch (remote branch):
 ` git checkout -t origin/another-branch `
 
+If you want to rename a branch while pointed to any branch:
+` git branch -m <oldname> <newname> `
+
+If you want to rename the current branch:
+` git branch -m <newname> `
+
+If you want to push the local branch and reset the upstream branch:
+` git push origin -u <newname> `
+
 Set the cache for 1 hour:
 ` git config --global credential.helper "cache --timeout=86400" `
+
+List of configurations:
+` git config -l `
+
+Open git documentation on browser:
+` git help config `
+
+Reset git email:
+` git config --global --unset user.email `
+or
+` git config --global user.email "" `
+
+Edit configuration from your code editor:
+` git config --global --edit `
+
+-----------------------------------------
+
+Create new local repo:
+` git init `
+
+To send file from staging area back to working directory (unstage): (If you "git add" file by mistake and you would like to reset it back)
+` git reset head <file_name> `
+or
+` git restore --staged <file_name> `
+
+----------------------------------------
+
+Create github public key:
+` ssh-keygen -t rsa -b 4096 -C "<write your email here>" `
+` cat ~/.ssh/id_rsa.pub `
+Then go to github => settings => ssh keys => add new => paste your key
+
+To test public key authenticated successfully:
+` ssh -T git@github.com `
+
+----------------------------------------
+
+Make alias:
+` git config --global alias.<alias> <for this word> ` 
+Ex.: ` git config --global alias.st status ` => git st instead of git status
