@@ -124,3 +124,32 @@ To test public key authenticated successfully:
 Make alias:
 ` git config --global alias.<alias> <for this word> ` 
 Ex.: ` git config --global alias.st status ` => git st instead of git status
+
+----------------------------------------
+
+Isolate the added files (no need to commit now): "each stash created with unique id"
+` git stash `
+
+Isolate the added files (no need to commit now) with message 'description for these files on stash':
+` git stash save "<message here>" `
+
+Get the Isolated files from stash (يجيب أخر حاجة اتحطت في الاستاش) and remove them from the stash:
+` git stash pop `
+
+Get the Isolated files from stash (يجيب أخر حاجة اتحطت في الاستاش) and keep them on the stash:
+` git stash apply `
+
+Get specific stash id and remove it from the stash:
+` git stash pop stash@{<id here>}`
+
+Delete specific stash (no need it any more):
+` git stash drop stash@{<id here>}`
+
+Remove all inside stash:
+` git stash clear `
+
+Show changes in specific stash:
+` git stash show stash@{<id here>}`
+
+To see if there is file on stash or not:
+` git stash list `
