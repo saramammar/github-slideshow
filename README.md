@@ -1,17 +1,4 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
-
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
-
-Oh! I haven't introduced myself...
-
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
-
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
-
-I'll meet you over there, can't wait to get started!
-
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
-
+# GitHub Learning Lab Repository for Introducing GitHub
 -------------------------------
 
 Clone this repository:
@@ -104,10 +91,21 @@ Edit configuration from your code editor:
 Create new local repo:
 ` git init `
 
+Commits history:
+` git log `
+or
+` git log --oneline --graph `
+
 To send file from staging area back to working directory (unstage): (If you "git add" file by mistake and you would like to reset it back)
 ` git reset head <file_name> `
 or
 ` git restore --staged <file_name> `
+
+To delete remote commit and the changes in the working directory: (the commits you did after good_commit_hash_id will no longer be in the history of your master branch) and the head will pointer to the commit of good_commit_hash_id:
+` git reset --hard <good_commit_hash_id> `
+and to Undo this change and want head to pointer again to the deleted commit:
+` git reset --hard HEAD@{1} ` then push: 
+` git push origin master --force `
 
 ----------------------------------------
 
